@@ -10,63 +10,86 @@
 </head>
 <body>
 
-    <link rel="stylesheet" href="inventory.css">
+  <link rel="stylesheet" href="inventory.css">
 
-    <ul class="nav nav-pills nav-fill bg-dark">
+  <script src="inventory.js"></script>
 
-        <li class="nav-item">
-          <button class="btn" onclick="location.href = 'index.html';"><i class="fa fa-home"></i> Home</button>
-        </li>
+  <ul class="nav nav-pills nav-fill bg-dark">
+    <!-- Offcanvas Sidebar -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html"><i class="fa fa-home"></i> Home</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contactPage.html">Contact</a>
+    </div>
 
-        <li class="nav-item">
-            <a href="inventory.html" class="nav-link">Inventory</a>
-        </li>
+    <div id="main">
+      <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <div class="off-canvas-content" data-off-canvas-content>
+    <!-- Your page content lives here -->
+    </div>  
+
+      <li class="nav-item">
+        <a href="index.html" class="nav-link"><span style="font-size:30px;cursor:pointer;"></span><i class="fa fa-home"></i> Home</a>
+      </li>
+
+      <li class="nav-item">
+          <a href="inventory.html" class="nav-link"><span style="font-size:30px;cursor:pointer;"></span>Inventory</a>
+      </li>
+  
+      <li class="nav-item">
+        <a href="skills.html" class="nav-link"><span style="font-size:30px;cursor:pointer;"></span>Skills</a>
+      </li>
+  
+      <li class="nav-item">
+        <a href="projects.html" class="nav-link"><span style="font-size:30px;cursor:pointer;"></span>Projects</a>
+      </li>
+  
+      <li class="nav-item">
+        <a href="contactPage.html" class="nav-link"><span style="font-size:30px;cursor:pointer;"></span>Contact</a>
+      </li>
+  </ul>
+
+  <div style="position: relative;left:30px; top:20px;">
+    <h3 style="text-align: center;">
+      Education
+    </h3>
+
+    <div class="grid">
     
-        <li class="nav-item">
-          <a href="skills.html" class="nav-link">Skills</a>
-        </li>
-    
-        <li class="nav-item">
-          <a href="projects.html" class="nav-link">Projects</a>
-        </li>
-    
-        <li class="nav-item">
-          <a href="contactPage.html" class="nav-link" >Contact</a>
-        </li>
-    </ul>
+    </div> 
 
-    <div style="position: relative;left:30px; top:20px;">
-      <h3 style="text-align: center;">
-        Education
-      </h3>
+  </div>
 
-      <div class="grid">
+  <div>
+    <h3 style="text-align: center;">
+      Certifications
+    </h3>
+
+    <div class="grid">
+      <div style="position:relative;left:80px; top:50px;" class="grid-item">
+        <img src="images/ROS2 For Beginners (ROS Foxy, Humble - 2023)1024_1.png" alt="ROS 2 Level 2 certification" width="300" height="200">
+          <p><a href="images/ROS2 For Beginners (ROS Foxy, Humble - 2023)1024_1.png">Download</a> instead.</p>
+        </img>
+      </div>
+
+      <div style = "position:relative;left:80px; top:50px;" class="grid-item">
+        <img src="images/ROS2 for Beginners Level 2 - TF URDF RViz Gazebo.png" alt="ROS 2 Level 2 certification" width="300" height="200">
+          <p><a href="images/ROS2 for Beginners Level 2 - TF URDF RViz Gazebo.png">Download</a> instead.</p>
+        </img>
+      </div>
+
       
-      </div> 
+    </div> 
 
-    </div>
+  </div>
 
-    <div>
-      <h3 style="text-align: center;">
-        Certifications
-      </h3>
 
-      <div class="grid">
-        <div style="position:relative;left:80px; top:50px;" class="grid-item">
-          <img src="images/ROS2 For Beginners (ROS Foxy, Humble - 2023)1024_1.png" alt="ROS 2 Level 2 certification" width="300" height="200">
-            <p><a href="images/ROS2 For Beginners (ROS Foxy, Humble - 2023)1024_1.png">Download</a> instead.</p>
-          </img>
-        </div>
-
-        <div style = "position:relative;left:80px; top:50px;" class="grid-item">
-          <img src="images/ROS2 for Beginners Level 2 - TF URDF RViz Gazebo.png" alt="ROS 2 Level 2 certification" width="300" height="200">
-            <p><a href="images/ROS2 for Beginners Level 2 - TF URDF RViz Gazebo.png">Download</a> instead.</p>
-          </img>
-        </div>
-
-        
-      </div> 
-
-    </div>
+  
+    
 </body>
 </html>

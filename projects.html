@@ -12,34 +12,52 @@
 <body>
     <link rel="stylesheet" href="projects.css">
 
+    <script src="projects.js"></script>
+
     <ul class="nav nav-pills nav-fill bg-dark">
+        <!-- Offcanvas Sidebar -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html"><i class="fa fa-home"></i> Home</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contactPage.html">Contact</a>
+        </div>
 
-    <li class="nav-item">
-        <button class="btn" onclick="location.href = 'index.html';"><i class="fa fa-home"></i> Home</button>
-    </li>
+        <div id="main">
+            <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
 
-    <li class="nav-item">
-        <a href="inventory.html" class="nav-link">Inventory</a>
-    </li>
+        <div class="off-canvas-content" data-off-canvas-content>
+        <!-- Your page content lives here -->
+        </div>  
 
-    <li class="nav-item">
-        <a href="skills.html" class="nav-link">Skills</a>
-    </li>
+        <li class="nav-item">
+            <a href="index.html" class="nav-link"><span style="font-size:30px;cursor:pointer;"></span><i class="fa fa-home"></i> Home</a>
+        </li>
 
-    <li class="nav-item">
-        <a href="projects.html" class="nav-link">Projects</a>
-    </li>
-
-    <li class="nav-item">
-        <a href="contactPage.html" class="nav-link" >Contact</a>
-    </li>
-
+        <li class="nav-item">
+            <a href="inventory.html" class="nav-link"><span style="font-size:30px;cursor:pointer;"></span>Inventory</a>
+        </li>
+    
+        <li class="nav-item">
+            <a href="skills.html" class="nav-link"><span style="font-size:30px;cursor:pointer;"></span>Skills</a>
+        </li>
+    
+        <li class="nav-item">
+            <a href="projects.html" class="nav-link"><span style="font-size:30px;cursor:pointer;"></span>Projects</a>
+        </li>
+    
+        <li class="nav-item">
+            <a href="contactPage.html" class="nav-link"><span style="font-size:30px;cursor:pointer;"></span>Contact</a>
+        </li>
     </ul>
 
-
     <div class="github-card" data-github="Rohit12909/Rohit12909.github.io" data-width="400" data-height="" data-theme="default"></div>
+    <div class="github-card" data-github="Rohit12909/Sudoku" data-width="400" data-height="" data-theme="default"></div>
     <div class="github-card" data-github="Rohit12909/Pill-Pushers" data-width="400" data-height="" data-theme="default"></div>
-      
+    
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
     
 </body>
