@@ -1,5 +1,6 @@
 body{
     background-color: rgb(13, 29, 46);
+    width: 100%;
 }
 
 * {
@@ -171,7 +172,7 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #161616;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -181,7 +182,7 @@ body{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #a7a5a5;
     display: block;
     transition: 0.3s;
 }
@@ -206,4 +207,63 @@ body{
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+section {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: white;
+    height: 65vh;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(13, 29, 46);
+    background-color: rgb(13, 29, 46, 0.4);
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #0c50a7;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.column {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
 }
