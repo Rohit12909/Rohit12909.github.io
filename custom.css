@@ -3,6 +3,13 @@ body{
     width: 100%;
 }
 
+#backgrounds {
+    background-color: red;
+    transition: background-color 10s;
+    width:auto;
+    height: 700px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -130,7 +137,7 @@ body{
 
 .fab-action {
     position: absolute;
-    background: #0f1941;
+    background: #1b3291;
     width: 3rem; height: 3rem;
     border-radius: 50%;
     display: flex;
@@ -158,6 +165,7 @@ body{
 .fab-wheel .fab-action-2 {
     right: 3.4rem;
     top: 0.5rem;
+    
 }
 
 .fab-wheel .fab-action-3 {
@@ -226,25 +234,24 @@ section {
 
 .modal {
     display: none;
-    position: fixed;
+    position: flex;
     z-index: 1;
-    left: 50%;
-    top: 0;
+    left: 75%;
+    top: 55%;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
     background-color: rgb(13, 29, 46);
     background-color: rgb(13, 29, 46, 0.4);
     text-align: center;
 }
 
 .modal-content {
-    background-color: #0c50a7;
-    margin: 15% auto;
+   background-color: #0f1941;
+
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    
 }
 
 .close {
@@ -264,6 +271,36 @@ section {
 
 .column {
     display: grid;
-    align-items: center;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.blink {
+    animation: blink 3s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.rounded-corners {
+    background-color: #0f1941;
+    color: #b8b4b4;
+    font-size: large;
+    border-radius: 8px;
+}
+
+h8 {
+    font-size: x-small;
+    color: #9e9a9a9e;
+}
+h5 {
+    color: #ffffff99;
 }

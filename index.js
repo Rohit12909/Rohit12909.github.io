@@ -26,3 +26,14 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function randomColor() {
+  return '#' + ('000000' + (Math.random() * 0xFFFFFF << 0).toString(16)).slice(-6)
+}
+
+function setColor() {
+  document.getElementById('backgrounds').style.backgroundColor = randomColor();
+  setTimeout(setColor, 2000);
+}
+
+setColor();
