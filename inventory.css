@@ -3,15 +3,24 @@ body{
     font-family: "Lato", sans-serif;
 }
 
+#backgrounds {
+    background-color: red;
+    transition: background-color 10s;
+    width: 1550px;
+    height: 1000px;
+}
+
 .grid {
     display: grid;
-    grid-template-columns: 300px 350px 200px;
-    grid-template-rows: 250px 200px 300px;
-    grid-gap: 100px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 150px 100px auto;
+    grid-gap: 50px;
+    
 }
   
 .grid > * {
-    border: 5px solid rgb(120, 255, 208);
+    border: 5px solid rgb(189, 189, 189);
+    width: auto;
 }
 
 h3 {
@@ -66,4 +75,21 @@ img{
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+.blink {
+    animation: blink 10s infinite;
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

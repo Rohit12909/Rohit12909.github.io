@@ -242,13 +242,12 @@ section {
     height: 100%;
     overflow: hidden;
     background-color: rgb(13, 29, 46);
-    background-color: rgb(13, 29, 46, 0.4);
+    background-color: rgb(13, 29, 46, 0.0);
     text-align: center;
 }
 
 .modal-content {
-   background-color: #0f1941;
-
+    background-color: #0f1941;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
@@ -275,7 +274,7 @@ section {
 }
 
 .blink {
-    animation: blink 3s infinite;
+    animation: blink 10s infinite;
 }
 
 @keyframes blink {
