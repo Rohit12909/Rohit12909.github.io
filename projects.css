@@ -70,7 +70,8 @@ body{
     }
 }
 
-.github-card {
-   margin: auto;
-   width: 10%;
+iframe {
+   margin-top: 10px;
+   margin-left: 75px;
+   columns: auto;
 }
