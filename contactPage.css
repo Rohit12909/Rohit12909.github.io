@@ -19,11 +19,11 @@ h3 {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: rgb(13, 29, 46);
     text-align: left;
     background-color: rgb(13, 29, 46);
     padding: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     max-width: 100%;
@@ -31,6 +31,7 @@ h3 {
 
 .fcf-form-group {
     margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 
 .fcf-input-group {
@@ -80,7 +81,7 @@ label.fcf-label {
 }
 
 .fcf-credit {
-    padding-top: 10px;
+    padding-top: 30px;
     font-size: 0.9rem;
     color: #545b62;
 }

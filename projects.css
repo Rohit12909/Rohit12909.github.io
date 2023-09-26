@@ -2,6 +2,14 @@ body{
     background-color: rgb(13, 29, 46);
 }
 
+#backgrounds {
+    background-color: red;
+    transition: background-color 10s;
+    width:auto;
+    height: 700px;
+}
+
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -44,4 +52,25 @@ body{
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+.blink {
+    animation: blink 10s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.github-card {
+   margin: auto;
+   width: 10%;
 }

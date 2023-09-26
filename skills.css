@@ -2,16 +2,24 @@ body{
     background-color: rgb(13, 29, 46);
 }
 
+#backgrounds {
+    background-color: red;
+    transition: background-color 10s;
+    width:auto;
+    height: 700px;
+}
+
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: rgb(13, 29, 46);
     text-align: center;
+    
 }
 
 .tab button {
     background-color: inherit;
-    float: left;
+    float: center;
     border: none;
     outline: none;
     cursor: pointer;
@@ -21,7 +29,7 @@ body{
 }
 
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #6c5e7e;
 }
 
 .tab button.active {
@@ -30,10 +38,13 @@ body{
 
 .tab-content {
     display: none;
+    float: center;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
     animation: fadeEffect 1s;
+    margin: auto;
+    width: fit-content;
 }
 
 @keyframes fadeEffect {
@@ -83,4 +94,25 @@ body{
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+.blink {
+    animation: blink 10s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h3 {
+    text-align: center;
+    float: center;
 }
